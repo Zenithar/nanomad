@@ -23,5 +23,5 @@ RUN apk add --update -t build-deps wget unzip \
 EXPOSE      4646 4647 4648/tcp 4648/udp
 VOLUME      ["/data"]
 WORKDIR     /data
-ENTRYPOINT  ["./entrypoint.sh"]
+ENTRYPOINT  ["/entrypoint.sh"]
 CMD         ["-h"]
