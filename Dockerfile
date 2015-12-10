@@ -1,4 +1,4 @@
-FROM alpine:latest
+FROM sdurrheimer/alpine-glibc:latest
 MAINTAINER Thibault NORMAND <me@zenithar.org>
 
 RUN apk add --update -t build-deps wget unzip \
