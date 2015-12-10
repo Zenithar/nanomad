@@ -4,7 +4,7 @@ MAINTAINER Thibault NORMAND <me@zenithar.org>
 RUN apk add --update -t build-deps wget unzip \
     && wget --no-check-certificate https://releases.hashicorp.com/nomad/0.2.1/nomad_0.2.1_linux_amd64.zip \
     && unzip nomad_0.2.1_linux_amd64.zip \
-    && mv vault /usr/bin/nomad \
+    && mv nomad /usr/bin/nomad \
     && chmod +x /usr/bin/nomad \
     && mkdir /data \
     && addgroup nomad \
