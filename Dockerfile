@@ -13,7 +13,7 @@ RUN apk add --update -t build-deps wget unzip \
     && rm -rf /var/cache/apk/*
 
 USER        nomad
-EXPOSE      8200
+EXPOSE      4646 4647 4648/tcp 4648/udp
 VOLUME      ["/data"]
 WORKDIR     /data
 ENTRYPOINT  ["/usr/bin/nomad"]
