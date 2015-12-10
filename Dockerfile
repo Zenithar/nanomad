@@ -9,6 +9,7 @@ RUN apk add --update -t build-deps wget unzip \
     && mkdir /data \
     && addgroup nomad \
     && adduser -s /bin/false -G nomad -S -D nomad \
+    && chown -R nomad:nomad /data \
     && apk del --purge build-deps \
     && rm -rf /var/cache/apk/*
 
